@@ -81,6 +81,11 @@ body {
     background-color: aqua;
     grid-column: 2/4;
     grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 1rem;
+    padding-bottom: 0;
 }
 
 .sidebar {
@@ -122,4 +127,14 @@ body {
     list-style-type: none;
     gap: 1rem;
     padding-bottom: 1rem;
+}
+
+.top {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.bottom {
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
