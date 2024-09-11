@@ -1,0 +1,125 @@
+/* css reset */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /* parts recommend form the MDN articles  */
+  button,
+  input,
+  select,
+  textarea {
+    font-family: inherit;
+    font-size: 100%;
+  }
+
+input,
+textarea,
+select,
+button {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+  /* end of the reset */
+
+body {
+    background-color: lightgray;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+}
+
+.header {
+    background-color: aqua;
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.sidebar {
+    background-color: blue;
+    grid-column: 1/2;
+    grid-row: 1/4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr;
+}
+
+.projects {
+    background-color: blueviolet;
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+.announcements {
+    background-color: brown;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.trending {
+    background-color: red;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.sidebar p{
+    align-self: center;
+    justify-self: center;
+}
+
+.sidebar ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10,1fr);
+    list-style-type: none;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
