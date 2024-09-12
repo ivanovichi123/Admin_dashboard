@@ -107,10 +107,6 @@ body {
     background-color: brown;
     grid-column: 3/4;
     grid-row: 2/3;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr;
-    padding: 10px;
 }
 
 .trending {
@@ -146,3 +142,73 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
+#ann-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 10px;
+  align-items: center;
+}
+
+#trending-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4,1fr);
+  padding: 10px;
+}
+
+.user-profile-1 {
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.user-profile-2 {
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.user-profile-3 {
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.user-profile-4 {
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.user-profile-1 h4 {
+  grid-column: 1/2;
+}
+
+.user-profile-1 > p {
+  grid-column: 2/3;
+}
+
+.user-profile-2 h4 { 
+  grid-column: 1/2;
+}
+
+.user-profile-2 > p {
+  grid-column: 2/3;
+}
+
+.user-profile-3 h4 {
+  grid-column: 1/2;
+}
+
+.user-profile-3 > p {
+  grid-column: 2/3;
+}
+
+.user-profile-4 h4 {
+  grid-column: 1/2;
+}
+
+.user-profile-4 > p {
+  grid-column: 2/3;
+}
