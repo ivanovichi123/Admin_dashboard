@@ -212,3 +212,9 @@ body {
 .user-profile-4 > p {
   grid-column: 2/3;
 }
+
+#projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr;
+}
