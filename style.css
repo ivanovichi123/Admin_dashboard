@@ -107,6 +107,10 @@ body {
     background-color: brown;
     grid-column: 3/4;
     grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    padding: 10px;
 }
 
 .trending {
@@ -125,16 +129,20 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(10,1fr);
     list-style-type: none;
-    gap: 1rem;
     padding-bottom: 1rem;
 }
 
 .top {
     grid-column: 1/2;
     grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .bottom {
     grid-column: 1/2;
     grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
