@@ -107,10 +107,11 @@ body {
     background-color: brown;
     grid-column: 3/4;
     grid-row: 2/3;
+    background-color: lightgray;
 }
 
 .trending {
-    background-color: red;
+    background-color: lightgray;
     grid-column: 3/4;
     grid-row: 3/4;
 }
@@ -127,10 +128,11 @@ body {
 .sidebar ul {
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: repeat(10,1fr) 5fr;
+    grid-template-rows: repeat(10,1fr) 12fr;
     list-style-type: none;
     padding-top: 1rem;
     padding-left: 10px;
+    grid-row: 2/3;
 }
 
 .top {
@@ -151,21 +153,32 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  padding: 10px;
+  padding: 15px;
   align-items: center;
+  background-color: white;
+  margin: 10px;
+  border-radius: 15px;
 }
 
 #trending-grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4,1fr);
-  padding: 10px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+  grid-row-gap: 20px;
+  border-radius: 15px;
+  margin: 10px;
+  margin-bottom: 30px;
 }
 
 .user-profile-1 {
   grid-column: 1/2;
   display: grid;
   grid-template-columns: 1fr 2fr;
+
 }
 
 .user-profile-2 {
@@ -186,32 +199,52 @@ body {
   grid-template-columns: 1fr 2fr;
 }
 
-.user-profile-1 h4 {
+.user-profile-1 img {
   grid-column: 1/2;
+  align-self: center;
+  justify-self: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 .user-profile-1 > p {
   grid-column: 2/3;
 }
 
-.user-profile-2 h4 { 
+.user-profile-2 img { 
   grid-column: 1/2;
+  align-self: center;
+  justify-self: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 .user-profile-2 > p {
   grid-column: 2/3;
 }
 
-.user-profile-3 h4 {
+.user-profile-3 img {
   grid-column: 1/2;
+  align-self: center;
+  justify-self: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 .user-profile-3 > p {
   grid-column: 2/3;
 }
 
-.user-profile-4 h4 {
+.user-profile-4 img {
   grid-column: 1/2;
+  align-self: center;
+  justify-self: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 .user-profile-4 > p {
@@ -265,4 +298,38 @@ body {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   grid-column: 2/3;
+}
+
+.title_trending {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: calc(2rem - 10px);
+  font-weight: bold;
+  padding-left: 10px;
+  margin-top: 30px;
+}
+
+.block2 {
+  border-top: solid rgb(63, 61, 61);
+  padding-top: 10px;
+}
+
+.block3 {
+  border-top: solid rgb(63, 61, 61);
+  padding-top: 10px;
+}
+
+.announcements .title_announcement {
+  font-weight: bold;
+}
+
+.text {
+  font-size: calc(2rem - 20px);
+}
+
+.title_announcement2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: calc(2rem - 10px);
+  font-weight: bold;
+  padding-left: 10px;
+  margin-top: 30px;
 }
