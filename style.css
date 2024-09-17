@@ -115,14 +115,14 @@ body {
     grid-row: 3/4;
 }
 
-.sidebar p{
+.sidebar ul p{
     align-self: center;
-    font-size: calc(2rem - 5px);
+    font-size: calc(2rem - 14px);
     font-weight: bolder;
-    color: white;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
     grid-column: 2/3;
-}
+} 
 
 .sidebar ul {
     display: grid;
@@ -130,6 +130,7 @@ body {
     grid-template-rows: repeat(10,1fr) 5fr;
     list-style-type: none;
     padding-top: 1rem;
+    padding-left: 10px;
 }
 
 .top {
@@ -223,17 +224,45 @@ body {
   grid-template-rows:1fr 1fr 1fr;
 }
 
-.sidebar img {
+#logo_img {
   height: 50px;
   width: 50px;
+  align-self: center;
+  justify-self: center;
+  grid-column: 1/2; 
+} 
+
+.logo {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.sidebar li {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.column-1 {
+  grid-column: 2/3;
+  align-self: center;
+  justify-self: center;
+}
+
+.sidebar_img {
+  height: calc(2rem - 10px);
+  width: calc(2rem - 10px);
   align-self: center;
   justify-self: center;
   grid-column: 1/2;
 }
 
-.logo {
-  display: grid;
-  grid-column: 1fr 3fr;
-  padding-right: 15px;
+.logo_text {
+  align-self: center;
+  font-size: calc(2rem - 14px);
+  font-weight: bolder;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  grid-column: 2/3;
 }
-
