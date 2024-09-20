@@ -78,7 +78,7 @@ body {
 }
 
 .header {
-    background-color: aqua;
+    background-color: white;
     grid-column: 2/4;
     grid-row: 1/2;
     display: grid;
@@ -423,11 +423,29 @@ body {
 
 .buttons {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr 1fr;
   align-items: center;
   justify-items: center;
+  background-color: white;
 }
 
 button {
   width: 5rem;
+  height: 2rem;
+   border-radius: 15px;
+   border: none;
+   font-size: calc(1rem - 2px);
+   background-color: #06b6d4;
+   color: white;
+   font-weight: bold;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.button1 {
+  justify-self: end;
+}
+
+.button3 {
+  justify-self: start;
+}
+
